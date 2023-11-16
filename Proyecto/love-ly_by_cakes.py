@@ -1,3 +1,5 @@
+Traceback (most recent call last);
+
 print("Soy Joel")
 print("hola mundo")
 print("hola soy nicole")
