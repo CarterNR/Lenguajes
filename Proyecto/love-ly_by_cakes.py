@@ -1,4 +1,9 @@
 print("hola mundo")
+<<<<<<<<< Temporary merge branch 1
 print("hola soy nicole")
-print("no sé que estoy haciendo")
-print("ya no quiero")
+=========
+
+
+
+
+>>>>>>>>> Temporary merge branch 2
