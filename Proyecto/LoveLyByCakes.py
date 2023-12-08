@@ -1,5 +1,4 @@
 from tkinter import *
-from usuarios import UsuariosFormulario
 from productos import ProductosFormulario
 from categorias import CategoriasFormulario
 from costos import CostosFormulario
@@ -13,6 +12,9 @@ from ordenes import OrdenesFormulario
 from rellenos import RellenosFormulario
 from roles import RolesFormulario
 from ventas import VentasFormulario
+from usuarios import EliminarUsuarios
+from usuarios import EliminarUsuarios
+from editarUsuario import UsuarioDetailsForm
 
 class LoveLyByCakes:
 
@@ -20,7 +22,7 @@ class LoveLyByCakes:
         self.master = master
         master.title("Love-ly By Cakes")
 
-        self.boton_usuarios = Button(master, text="Formulario Usuarios", command=self.abrir_usuarios)
+        self.boton_usuarios = Button(master, text="Opciones Usuario", command=self.abrir_ventana_usuarios)
         self.boton_productos = Button(master, text="Formulario Productos", command=self.abrir_productos)
         self.boton_categorias = Button(master, text="Formulario Categorías", command=self.abrir_categorias)
         self.boton_costos = Button(master, text="Formulario Costos", command=self.abrir_costos)
@@ -50,20 +52,20 @@ class LoveLyByCakes:
         self.boton_roles.pack(pady=20)
         self.boton_ventas.pack(pady=20)
 
-    def abrir_usuarios(self):
+    def abrir_ventana_usuarios(self):
         ventana_usuarios = Toplevel(self.master)
         ventana_usuarios.geometry("500x300")
-        UsuariosFormulario(ventana_usuarios)
+        EliminarUsuarios(ventana_usuarios)
 
     def abrir_productos(self):
         ventana_productos = Toplevel(self.master)
         ventana_productos.geometry("500x300")
-        ProductosFormulario(ventana_productos)
+        EliminarUsuarios(ventana_productos)
 
     def abrir_categorias(self):
         ventana_categorias = Toplevel(self.master)
         ventana_categorias.geometry("500x300")
-        CategoriasFormulario(ventana_categorias)
+        UsuarioDetailsForm(ventana_categorias)
 
     def abrir_costos(self):
         ventana_costos = Toplevel(self.master)
